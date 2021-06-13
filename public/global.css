@@ -99,31 +99,31 @@ section.col-text.text {
 
     
 a {
-	outline: none;
-	text-decoration: none;
-	padding: 2px 1px 0;
+	outline: none !important;
+	text-decoration: none !important;
+	padding: 2px 1px 0 !important;
   }
   
   a:link {
-	color: #bb0303;
+	color: #bb0303 !important;
   }
   
   a:visited {
-	color: #410101;
+	color: #410101 !important;
   }
   
   a:focus {
-	border-bottom: 1px solid;
-	background: #f7a4a4;
+	border-bottom: 1px solid !important;
+	background: #f7a4a4 !important;
   }
   
   a:hover {
-	border-bottom: 1px solid;
-	background: #feaaaa;
+	border-bottom: 1px solid !important;
+	background: #feaaaa !important;
   }
   
   a:active {
-	background: #860101;
-	color: #131313;
+	background: #860101 !important;
+	color: #131313 !important;
   }
   
