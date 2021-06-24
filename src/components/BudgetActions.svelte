@@ -199,6 +199,5 @@ p.bolder {
 hr {
     border-top: 2px solid black;
     position: relative;
-    top: -10px;
 }
 </style>

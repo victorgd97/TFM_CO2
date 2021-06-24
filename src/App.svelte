@@ -159,9 +159,11 @@
 	
 	{:else if block.type === 'transition'}
 	<div class=transitionBox>
+		<div class="transition-space">
 		{#each block.text as p}
-				<h4><span class="transition-space">{@html p.p}</span></h4>
+				<h4>{@html p.p}</h4>
 		{/each}
+		</div>
 		<div class="transitionArrow">
 			<InlineSVG src={transitionArrow}/>
 		</div>
@@ -289,7 +291,7 @@
 		margin: 0 auto;
 		width: 500px;
 		text-align: left;
-		height: 480px;
+		height: 520px;
 		line-height: 30px;
 	}
 
@@ -298,11 +300,17 @@
 		position: relative;
 		left: calc(100%-10px);
 		top: -25vh;
+		width: 500px;
+		right: -30vw;
+		z-index: -1;
 
     }
 
 	:global(.transition-space){
-		line-height: 1.5rem;
+		background-color: white;
+		border: 3px solid rgba(0, 0, 0, 0.2);
+		padding: 20px;
+		border-radius: 6px;
 	}
 
 	:global(.calc-header){

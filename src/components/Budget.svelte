@@ -189,12 +189,9 @@ const arrow = './images/arrow.svg';
     .carbon-budget-label {
         bottom: 6px;
         position: absolute;
-        padding: 5px;
-        margin: 6px 5vw;
         font-size: 0.8rem !important;
         text-align:center;
-        width: 12.5vw;
-        right: 5px; 
+        right: 10px; 
     }
 
     .white-bg {
