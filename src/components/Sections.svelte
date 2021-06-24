@@ -35,7 +35,7 @@ let height=500;
        <button class="ripple" tooltip="Accumulated emissions, global"  on:click={() => scatterStep = 0}> Global</button>
        <br>
        <button class="ripple"  on:click={() => scatterStep = 1}> Countries by production</button> 
-       <span title="According to countries' domestic production, also knonw as territorial emissions. This is how national emissions are reported. Notice the slice of International transport not accounted in countries' budgets.. "> <InlineSVG src='./images/information.svg'/>   </span>
+       <span title="According to countries' domestic production, also known as territorial emissions. This is how national emissions are reported. Notice the slice of International transport not accounted in countries' budgets.. "> <InlineSVG src='./images/information.svg'/>   </span>
        <br> 
        <button class="ripple"  on:click={() => scatterStep = 2}> Countries by consumption</button>
        <span title="According to countries' consumption and regardless of the place of production, also known as trade-adjusted. It is a closer mesaure of the lifestyle of a country's citizens."> <InlineSVG src='./images/information.svg'/>   </span>
