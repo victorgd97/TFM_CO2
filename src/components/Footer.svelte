@@ -3,7 +3,7 @@
     import ViT from './img/ViT.svelte'
     import UdG from './img/UdG.svelte'
     import Tweet from './img/Tweet.svelte'
-    import { mdiGithub,  mdiEmailOutline } from '@mdi/js'; 
+    import { mdiGithub,  mdiEmailOutline, mdiMessage  } from '@mdi/js'; 
     import InlineSVG from 'svelte-inline-svg';
     
    
@@ -43,12 +43,12 @@
       <div >
          <h4>  <b>Share it</b> <Tweet tweet='' url='' />   
                <b>Connect</b>
-                    <Button icon class="white-text"  on:click={window.open ("https://github.com/victorgd97/TFM_CO2")}>
+                    <Button icon class="white-text"  on:click={()=> window.open ("https://github.com/victorgd97/TFM_CO2")}>
                         <Icon path={mdiGithub} />
                     </Button> 
                <b> Feedback?</b>
-                     <Button icon class="white-text"  >
-                         <Icon path={mdiEmailOutline} />
+                     <Button icon class="white-text" on:click={()=> window.open ( "https://docs.google.com/forms/d/e/1FAIpQLSeUZXa3_iFA5ib_CU8G2vobkAWqqHeJW3WRoAFrvU63hMLs5w/viewform")} >
+                         <Icon path={mdiMessage} />
                      </Button>
           </h4>      
       </div>
@@ -81,6 +81,9 @@
     }
     
     
+  
+
+
     
 </style> 
  
