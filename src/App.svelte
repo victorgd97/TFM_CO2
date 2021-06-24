@@ -296,7 +296,7 @@
 	/* Arrow */
 	:global(.transitionArrow) {
 		position: relative;
-		left: 100%;
+		left: calc(100%-10px);
 		top: -25vh;
 
     }

@@ -118,7 +118,7 @@ export let onChange;
     }
 
     :global(svg#iconSVG) {
-        max-width: 30px; 
+        width: 30px; 
     }
 
     :global(.s-col){

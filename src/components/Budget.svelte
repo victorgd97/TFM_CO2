@@ -49,6 +49,7 @@ const arrow = './images/arrow.svg';
             <span class="white-bg">carbon</span><br>
             <span class="white-bg">budget</span>
         </div>
+        <hr class="small-line">
 </div>
 {/if}
 
@@ -182,6 +183,7 @@ const arrow = './images/arrow.svg';
         position: absolute;
         top: 0;
         transition: opacity 0.5s;
+        border-bottom: 2px solid black;
     }
 
     .carbon-budget-label {
@@ -201,4 +203,8 @@ const arrow = './images/arrow.svg';
         line-height:1.2rem;
     }
 
+    hr.small-line {
+        border-top: 2px solid black;
+        position: relative;
+    }
 </style>

@@ -183,10 +183,8 @@ video {
 
 /* Arrow */
 .arrow2 {
-        width:40px;
+        width:30px;
         transform: rotate(180deg);
-        margin-left: 20px;
-
     }
 
 .congrats-box {
