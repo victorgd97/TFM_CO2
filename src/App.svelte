@@ -85,11 +85,12 @@
 		mark2017.style.opacity = 0;
 	}
 	}
+	
 	$:if (mark2040 !== null) {
-		if (progress > 0.7  && progress < 0.99 ) {
-		mark2017.style.opacity = 1;
+		if (progress > 0.3  && progress < 0.8 ) {
+		mark2040.style.opacity = 1;
 	} else {
-		mark2017.style.opacity = 0;
+		mark2040.style.opacity = 0;
 	}
 	}
 
@@ -289,6 +290,7 @@
 		width: 500px;
 		text-align: left;
 		height: 480px;
+		line-height: 30px;
 	}
 
 	/* Arrow */

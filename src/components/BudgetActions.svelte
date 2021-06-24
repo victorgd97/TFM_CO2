@@ -185,7 +185,7 @@ video {
 .arrow2 {
         width:40px;
         transform: rotate(180deg);
-        margin-left: 10vw;
+        margin-left: 20px;
 
     }
 

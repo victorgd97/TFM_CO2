@@ -31,7 +31,7 @@ const arrow = './images/arrow.svg';
     </p>
 </div>
 <div id="2040-mark" class="mark2040" bind:this={mark2040}>
-    <p >This is the carbon limit. We don't want to reach here.</p>
+    <p >This is the <b>carbon limit</b>. We don't want to reach here.</p>
     <div class="arrow2040">
         <InlineSVG src={arrow}/>
     </div>
@@ -176,7 +176,7 @@ const arrow = './images/arrow.svg';
     .limit-bg {
         background-color:white;
         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAKElEQVQYV2NkwA58GbGI+zIwMGxGlwALghQjS8AFkSVQBGESGIIgCQBVnAVUPcxeHAAAAABJRU5ErkJggg==) repeat;
-        left:87.5vw;
+        left: calc(100% - 12.5vw);
         width:12.5vw;
         height:100vh;
         position: absolute;
@@ -191,6 +191,8 @@ const arrow = './images/arrow.svg';
         margin: 6px 5vw;
         font-size: 0.8rem !important;
         text-align:center;
+        width: 12.5vw;
+        right: 5px; 
     }
 
     .white-bg {
