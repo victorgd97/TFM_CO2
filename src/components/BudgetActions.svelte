@@ -65,7 +65,7 @@ function numberWithSpaces(x) {
 <hr>
 <div bind:this={element} class="action-bar-wrapper">
     <div class="budgetBar" style="width:{scale(growth)}vw">
-        <video title= "The width of the red is the accumulated emissions. There is some uncertainty in the numbers, that is why the edge is not precisely defined" autoplay muted loop>
+        <video  autoplay muted loop>
             <source src="./smokeWide3.mp4" type="video/mp4">
             </video>
     </div>
