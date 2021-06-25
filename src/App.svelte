@@ -15,7 +15,9 @@
 
 	const transitionArrow = './images/transitionArrow.svg';
 
-	import data from './data/data.json'
+	import data from './data/data.json';
+
+	const logo = './images/favicon_co2.svg'; 
 
   	let offset, progress;
 	$:index=index < 10 ? index:0 ;
