@@ -1,105 +1,15 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+![title](/public/favicon_ACDC.svg "Highway to CO2 hell in ACDC inspired font")
 
----
+By [Núria Altimir](https://twitter.com/naltimir), [Oriol Vidal](https://www.linkedin.com/in/oriol-vidal-porta/), [Rebecca Pazos](https://www.linkedin.com/in/rebeccapazos/) and [Víctor Garcia](https://www.linkedin.com/in/v%C3%ADctor-garcia-dom%C3%ADnguez-9083571a3/)
 
-# svelte app
+This project was designed and developed in the [Master’s program in Visual Tools to Empower Citizens (MVTEC)](http://www.mastervisualtoolsudg.com/) organized by [Fundació UdG](https://www.fundacioudg.org/) and the [ViT Foundation](https://www.fundaciovit.org/).
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
-
-## Get started
-
-Install the dependencies...
-
-```bash
-cd svelte-app
-npm install
-```
-
-...then start [Rollup](https://rollupjs.org):
-
-```bash
-npm run dev
-```
-
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
-
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
-
-## Building and running in production mode
-
-To create an optimised version of the app:
-
-```bash
-npm run build
-```
-
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
-
-
-## Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-## Using TypeScript
-
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
-
-```bash
-node scripts/setupTypeScript.js
-```
-
-Or remove the script via:
-
-```bash
-rm scripts/setupTypeScript.js
-```
-
-## Deploying to the web
-
-### With [Vercel](https://vercel.com)
-
-Install `vercel` if you haven't already:
-
-```bash
-npm install -g vercel
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-vercel deploy --name my-project
-```
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
+## Introduction 
+The project “HIGHWAY TO #CO2 HELL”  touches on the overarching theme of the climate crises and its mitigation,  to be presented to an audience who is not necessarily familiar with the subject. 
+The precise focus is to visualize that CO2 emissions are reaching the safe limit. Key messages we want to transmit  are 1) if we do nothing the crisis does not stop, 2) we need to focus on how to extend the margin we have left, 3) we can not only blame citizens 4) we are dealing with uncertainty.
+We are essentially displaying the magnitude of global CO2 anthropogenic emissions for the past, present and future. The magnitudes are shown using the carbon budget concept. This concept stems from  the relationship (approximately linear)  between anthropogenic emissions and global warming- what is known as the transient climate response to cumulative carbon emissions.  
+A focus is placed on showing accountability/responsibility  for the emissions, that is: who has been and is emitting and how in past and present,  as well as who should be acting to reduce the emissions and how in the present and future.
+We achieve this with 3 concept parts:
+Budget: it shows the historical accumulation of emissions and  takes you to the present situation. It provides background. It establishes a sense of urgency.
+Partition: it  shows the different ways accounting  of emissions is done and the elements included. It expands the background. It explores responsibility.
+Action: it shows example mitigation actions that can be taken by different society actors. It provides a way of seeing the relative impact of the efforts at different layers. It prompts action and will to get informed. 
