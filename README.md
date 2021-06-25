@@ -51,9 +51,9 @@ We wanted to get a good range of options - from those circulating in the public 
 - [Reduce transport emissions][3]: Climate Watch historical data on Greenhouse gas emissions.
 - [Increase renewable energy][4]: International Renewable Energy Agency 2017 report.
 - [Restore and protect forests and wetlands][5]: Sectoral greenhouse gas emission reduction potential in 2030 by UNEP report.
-- [Build our cities more sustainably][6]: The New Climate Economy report
-- [Reduce industry emissions][7]: Climate Accountability's carbon majors report from 2020 
-- [Sustainable fast fashion][8]: Clothes and Climate change report from Group Against Smog and Pollution (GASP) .
+- [Build our cities more sustainably][6]: The New Climate Economy report.
+- [Reduce industry emissions][7]: Climate Accountability's carbon majors report from 2020.
+- [Sustainable fast fashion][8]: Clothes and Climate change report from Group Against Smog and Pollution (GASP).
 - [More artificial meat][9]: Artificial Meat and the environment report from the European Environment Agency (EEA).
 
 [1]: http://www.fao.org/fileadmin/templates/nr/sustainability_pathways/docs/FWF_and_climate_change.pdf
