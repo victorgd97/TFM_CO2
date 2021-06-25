@@ -14,6 +14,19 @@ We are essentially displaying the magnitude of global CO2 anthropogenic emission
 A focus is placed on showing accountability/responsibility  for the emissions, that is: who has been and is emitting and how in past and present,  as well as who should be acting to reduce the emissions and how in the present and future.  
 
 We achieve this with 3 concept parts:
-- Budget: it shows the historical accumulation of emissions and  takes you to the present situation. It provides background. It establishes a sense of urgency.
-- Partition: it  shows the different ways accounting  of emissions is done and the elements included. It expands the background. It explores responsibility.
-- Action: it shows example mitigation actions that can be taken by different society actors. It provides a way of seeing the relative impact of the efforts at different layers. It prompts action and will to get informed. 
+- **Budget**: it shows the historical accumulation of emissions and  takes you to the present situation. It provides background. It establishes a sense of urgency.
+
+![smartmockups_kq8f116q 1](https://user-images.githubusercontent.com/13485334/123426552-22f3b480-d5f6-11eb-9fae-cfc39cdbe5dc.png)
+
+- **Partition**: it  shows the different ways accounting  of emissions is done and the elements included. It expands the background. It explores responsibility.
+
+![smartmockups_kq8f6idi 1](https://user-images.githubusercontent.com/13485334/123426529-1d966a00-d5f6-11eb-8adc-da846951f4e2.png)
+
+- **Action**: it shows example mitigation actions that can be taken by different society actors. It provides a way of seeing the relative impact of the efforts at different layers. It prompts action and will to get informed. 
+
+![smartmockups_kq8fduus 1](https://user-images.githubusercontent.com/13485334/123426572-27b86880-d5f6-11eb-9f45-56f4b9044df8.png)
+
+***
+
+## Data source and ethical considerations 
+
