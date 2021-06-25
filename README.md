@@ -193,11 +193,12 @@ The view-point issue in this project reflects on an on-going debate between the 
 - A good thing was to be able finally to participate in all the steps of the implementation and gain a huge amount of hands-on practice - Núria
 - Working with experts or people knowledgeable on the topic is essential to enrich the visual experience and storytelling, otherwise it is easy to fall into tropes or convey information inaccurately. - Rebecca
 - TBC - Victor
-- TBC - Oriol
+- Different kinds of expertise in the team has been essential to construct something with great projection in all aspects. - Oriol
 
 #### One thing to improve:
 - A thing that went not so good was the workflow, which was rather patchy due to different working rhythms, availability, and diverging views - Núria
 - Deeper understanding of structuring and coding a project, not something I am often exposed to so I can see there were flaws in our workflow - Rebecca
+- Not being able to help as I would like in the coding part.
 
 
 ### Overall improvements
