@@ -319,7 +319,5 @@
 		width: 20px;
 		margin-left: 1rem;
 		padding: 1rem;
-
 	}
-
 </style>
