@@ -80,3 +80,92 @@ Here we detail both numerical processing and decision-making steps.
 - **Historical time series 2017 onwards** including baseline for future emissions  is  a constant that equals the level  of emissions at 2017. We chose to stop at 2017 to be consistent with the calculations of the remaining C budget, even if it is known that emission increased yearly. 
 - **Magnitude of the remaining carbon budget** is taken straight from the IPCC report, defined as “cumulative CO<sub>2</sub> emissions from the start of 2018 until the time of net zero global emissions for global warming defined as a change in global near-surface air temperatures” and using the 1.5 °C limit. The  TCRE (the slope between the CO<sub>2</sub> and the warming,  see e.g. [here](https://www.nature.com/articles/s41586-019-1368-z)) is in itself an estimation surrounded by uncertainty (1.65 +- 0.85 stdev, 0.2–0.7 °C per 1 000 Gt CO<sub>2</sub>). If we use the range of slopes that falls into the 50-67 percentile, at the intersection of 1.5 °C this corresponds to  a remaining C budget of 420-580 Gt CO<sub>2</sub>. A proper representation of the uncertainty would need to include the  probability distribution of the values inside the range. [Here](https://observablehq.com/@nuriaaltimir/uncertaity-if-the-remaing-1-5-carbon-budget) there is an exercise assuming normality. As we can not infer normality, we would need to study the behaviour further. This level of detail was not deemed necessary for the message, we decided to use just a range or 160Gt (= 580-450) to give a sense of magnitude.  In reality, there are more factors bringing uncertainty to the estimates of the remaining C budget, see summary e.g. in Fig 1 [here](https://www.nature.com/articles/s41561-020-00663-3).
 - The **target year** we are giving is 2040, which is in the middle range of the estimations. For the sake of  implementation simplicity we did not consider showing the uncertainty around this number.
+
+##### Countries and sectors
+
+Not all countries had a value for their emissions by consumption, so the difference was lumped into  a “No Attribution” category. Otherwise, no processing needed, used as in the original data sets.  
+
+##### Actions data
+
+For each of the actions data, we had to find the most recent data point and ensure it is an annual value and in the correct data format.  
+- **Food waste**: We found that 4.4 Gt CO<sub>2</sub> eq was the emission rate that could be avoided yearly, if we reduce all food waste. So, as this seems impossible to achieve from one year to another, we decided to make the action as cutting our food waste by half so the final impact is 2.2 Gt CO<sub>2</sub> eq/year.
+- **Eat less meat**: We found data about the emissions impact of different types of diets (vegan, vegetarian…) but we thought that again, it was more realistic to think about globally changing to a flexitarian diet (eat meat once a week) so we collected the data from the report as it was: 5130 Mt CO2 eq/year.
+- **Reduce transport emissions**: TBC
+- **Increase renewable energy**:
+- **Restore and protect forests and wetlands**:
+- **Build our cities more sustainably**:
+- **Reduce industry emissions**:
+- **Sustainable fast fashion**:
+- **More artificial meat**: 
+
+These values are then aggregated into a yearly value, and then added to the last value of the historical data - set as the variable modified_value.
+With this reactive variable, we can then change the value added each year depending on the user input in the toggles.
+
+Formula to determine how much the bar should grow each year depending on user input is: 
+**carbonStart** + (**baseValue** - **active_sums**), until reaches **carbonEnd**
+
+<img width="470" alt="Screenshot 2021-06-25 at 7 25 57 PM" src="https://user-images.githubusercontent.com/13485334/123435459-2b50ed00-d600-11eb-9c55-803d706d63de.png">
+
+***
+
+## Visualization and interaction design
+
+It is quite common to see emission data displayed as a time series and partition, e.g. as it is done in OWID pages. This is very informative and practical. But we wanted to use a more visually striking approach to call the attention of a potentially uninterested reader.
+We were working with the ideas of a common space, accountability, partitioning from the start. After brainstorming the ideas of using red, showing uncertainty,  adding movement and a “calculator” idea came up.  The process can be followed in the project’s [figma](https://www.figma.com/file/IOEJYgX7xWMXXeGZHTv1Dg/first-prototypes?node-id=0%3A1) page.
+
+##### Layout
+We wanted to show that CO2 emissions, no matter how you try to attribute it to any one country or company, are still filling up our common space - that is our atmosphere, which, in essence, is our common fate. We achieve this by using a single colored shape that takes up the whole screen. The vertical arrangement is from past (history) to future (actions).
+
+##### Markers
+
+**Shape**: We chose a rectangular shape to help readers better associate growth in size. The width is shifted from left to right as more CO2 accumulates over time. In the partition part, we use height to encode for % contribution. In both cases, we use size and position. This also allows the user to focus on the negative space - the white space gets thinner and thinner as we approach the carbon limit, leaving users with a distinct impression that there isn't much space left to add more CO2 to the atmosphere.
+
+**Movement**: We focused our energies on using position - a visual encoding method proven in various studies ([Cleveland & McGill](https://web.cs.dal.ca/~sbrooks/csci4166-6406/seminars/readings/Cleveland_GraphicalPerception_Science85.pdf), 1985; [Mackinlay](https://research.tableau.com/sites/default/files/p110-mackinlay.pdf), 1986) to encode the key message - we are running out of time before we hit the carbon limit. The basic chart types are a moving horizontal bar and a stacked column. 
+
+**Visual metaphors**: To represent the uncertainty in the budget estimates we made the edge of the bar move between upper and lower values with a cinematographic smoke effect. Encoding uncertainty in this way also adds to the urgency of the key message and increases it's memorability.
+
+##### Style
+
+The dominant color is red (#C02) because <sub>2</sub> absorbs and emits infrared radiation (heat). Cinematographic effect adds interest. General style is simple and bold. We used a combination of black, white and red, with little variation in between to also allow users to give importance to the negative space - the portions remaining of the carbon budget. The use of the ACDC inspired font was an endearing nod to the title of the project - Highway to #C02 hell.
+
+##### Interaction
+
+We chose to guide users via scrollytelling for the historical portion to get them quickly up to speed with the issue at hand, especially if they may be unfamiliar with the topic. We then allow them to break down the partitions data as they see fit - enhancing the idea that no matter how you break it down, we need to move beyond the blame game because it really doesn't matter at this point. We then use a 'calculator' with toggles beside each reduction emissions option to allow users to pick and choose how they might try to solve the problem.
+
+##### Speed
+
+We used speed in two ways:
+
+1. During the budget historical scroller, the increase is cumulative and tied directly to the scroller. What this does is enhance the sensation that most of the carbon emissions have been added within the last century. This is most evident to the person actually scrolling - the action of scrolling is intricately tied to the data.  
+2. When it is time for the user to take action, they are presented with a bar that is rapidly speeding towards the carbon limit, giving them a sense of urgency to quickly make some choices to stop the bar from growing.
+
+***
+
+## Implementation details
+
+![scheme](https://user-images.githubusercontent.com/13485334/123438014-de224a80-d602-11eb-9745-3ee8e32f87c2.png)
+
+
+##### Part 1: Budget
+Historical data is fed into a CSS variable for the width which is then progressively stepped through as the scroller progresses. 
+
+##### Part 2: Sections
+An interactive stacked chart is created in a separate Svelte component and displayed as a slide in the scroll progress.
+
+##### Part 3: BudgetActions + Actions
+Action data creates the selection items for users to toggle on/off different reduction options. As they toggle on/off this adds a data row to indicate if the item is 'active' or 'inactive'. This new data array is then pushed to another Svelte component called BudgetActions which creates the moving bar chart again with a CSS variable from the new data. 
+
+We used [setInterval](https://www.w3schools.com/jsref/met_win_setinterval.asp) to begin the growth of the bar, and [intersection observer](https://www.npmjs.com/package/svelte-intersection-observer) to trigger the growth only when the bar comes into view. 
+
+##### Global implementation
+
+We  build the interface of the visualization using the front end compiler Svelte using this template provided by [Visualization for Transparency Foundation](https://github.com/fndvit/mvtec-svelte-app). In addition we coded the components with Javascript (including d3.js), HTML (including Canvas) and CSS. We used [Vercel](https://vercel.com/) for the final deployment. 
+
+The project is built 
+For adding the icons, arrows and other SVG elements, [svelte-inline-svg](https://www.npmjs.com/package/svelte-inline-svg) was used.
+For editing the text and adding the data, it was all done via Google docs with the help of [ArchieML](http://archieml.org/#usage).
+
+***
+
+## Conclusions
+
