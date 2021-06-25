@@ -198,7 +198,7 @@ The view-point issue in this project reflects on an on-going debate between the 
 #### One thing to improve:
 - A thing that went not so good was the workflow, which was rather patchy due to different working rhythms, availability, and diverging views - Núria
 - Deeper understanding of structuring and coding a project, not something I am often exposed to so I can see there were flaws in our workflow - Rebecca
-- Not being able to help as I would like in the coding part.
+- Not being able to help as I would like in the coding part. - Oriol
 
 
 ### Overall improvements
