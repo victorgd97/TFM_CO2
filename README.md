@@ -153,15 +153,17 @@ The diagram shows an overview of the main elements used to construct the project
 ![scheme](https://user-images.githubusercontent.com/13485334/123438014-de224a80-d602-11eb-9745-3ee8e32f87c2.png)
 
 ### Part 1: Budget
-Historical data is fed into a CSS variable for the width which is then progressively stepped through as the scroller progresses. 
+Historical data is fed into a CSS variable for the width which is then progressively stepped through as the scroller progresses. Both the gas video we did and the bar moves with this variable. The tricky part was to make the background stop at some point while the foreground keep showing new slides with information. The solution was to play with the progress variable of the scroller. 
 
 ### Part 2: Sections
-An interactive stacked chart is created in a separate Svelte component and displayed as a slide in the scroll progress.
+An interactive stacked chart is created in a separate Svelte component and displayed as a slide in the scroll progress. The most complicated part was to merge the budget with the sections. We wanted the scroller to work until it reaches a certain point, then it stops and the user can interact with the data and afterwards you can scroll again. The problem was that we wanted this interactive to be on the foreground but on the same time with a text panel with buttons to filter the data. We had lots of problems also with the transitions between the interactive and the tooltip but we finally made it.
 
 ### Part 3: BudgetActions + Actions
 Action data creates the selection items for users to toggle on/off different reduction options. As they toggle on/off this adds a data row to indicate if the item is 'active' or 'inactive'. This new data array is then pushed to another Svelte component called BudgetActions which creates the moving bar chart again with a CSS variable from the new data. 
 
 We used [setInterval](https://www.w3schools.com/jsref/met_win_setinterval.asp) to begin the growth of the bar, and [intersection observer](https://www.npmjs.com/package/svelte-intersection-observer) to trigger the growth only when the bar comes into view. 
+
+We used expansion panels from [svelte-materialify](https://github.com/TheComputerM/svelte-materialify) to make the explanatory text expandable as we wanted to show them all together in the screen at the same time we ensure the reader understands what each action means. We also added a reset button in case the user filled the budget.
 
 ### Global implementation
 
