@@ -13,7 +13,7 @@
 
 	import InlineSVG from 'svelte-inline-svg';
 
-	const transitionArrow = './images/transitionArrow.svg';
+	const transitionArrow = './images/transitionArrow-mobile.svg';
 
 	import data from './data/data.json';
 
@@ -292,21 +292,26 @@
 		padding: 25vh 0 5vh 0;
 		margin: 0 auto;
 		width: 500px;
-		text-align: left;
-		height: 520px;
-		line-height: 30px;
+		height: 600px;
 	}
 
 	/* Arrow */
 	:global(.transitionArrow) {
 		position: relative;
-		left: calc(100%-10px);
-		top: -25vh;
-		width: 500px;
-		right: -30vw;
-		z-index: -1;
-
-    }
+		top: -600px;
+		width: 60%;
+		right: -400px;
+		z-index: -100;
+		/* stroke-dasharray: 450;
+  		stroke-dashoffset: 450;
+  		animation: draw 2s linear forwards; */
+	}
+	/* 
+	@keyframes draw {
+  	to {
+    stroke-dashoffset: 0;
+  	}
+	} */
 
 	:global(.transition-space){
 		background-color: white;
@@ -319,5 +324,9 @@
 		width: 20px;
 		margin-left: 1rem;
 		padding: 1rem;
+	}
+
+	:global(.s-container.margin){
+		margin-left: 30vw !important;
 	}
 </style>

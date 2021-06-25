@@ -16,7 +16,7 @@ export let onChange;
 
 <MaterialApp>
 
-<Container>
+<Container class="margin">
 
 <div class="action">
 <Row>

@@ -185,6 +185,8 @@ video {
 .arrow2 {
         width:30px;
         transform: rotate(180deg);
+        position: relative;
+        margin-left: 80%;
     }
 
 .congrats-box {
