@@ -104,7 +104,7 @@ With this reactive variable, we can then change the value added each year depend
 Formula to determine how much the bar should grow each year depending on user input is: 
 **carbonStart** + (**baseValue** - **active_sums**), until reaches **carbonEnd**
 
-<img width="470" alt="Screenshot 2021-06-25 at 7 25 57 PM" src="https://user-images.githubusercontent.com/13485334/123435459-2b50ed00-d600-11eb-9c55-803d706d63de.png">
+<img width="100%" alt="Screenshot 2021-06-25 at 7 25 57 PM" src="https://user-images.githubusercontent.com/13485334/123435459-2b50ed00-d600-11eb-9c55-803d706d63de.png">
 
 ***
 
