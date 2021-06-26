@@ -217,7 +217,6 @@ Remaining improvements from general to details:
 - Section part: 
 	- Improve the  way the info icons show the information (a nicer tooltip or expansion panels to mimic the interaction in the Actions part)
 	- Show also data per capita
-	- Add the values to the tooltip over sections
 - Actions part
 	- Match the bar and video colors totally
 	- Better transition between sections - this was an important part of the project. A possible solution is to do a zoom effect at the end of the scroll that is achievable with stronger coding skills.
